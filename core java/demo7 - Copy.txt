@@ -1,0 +1,57 @@
+class A
+{
+
+         int a1 = 100;
+         void abc(int al)
+
+         {
+              system.out.println("Hilll A class " +this.a1);
+              system.out.println("Hilll A class"+a1);
+}
+
+}
+
+class demo7
+
+{
+     public static void main(string args[])
+     {
+       A.a = new A();
+       a.abc(1000);
+}
+}
+
+
+\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\
+
+
+
+
+class A
+{
+
+         int a1 = 100;
+ }
+  class B extends A 
+{
+       int a1 = 100;
+       void xyz(int a1)
+
+         {
+              system.out.println("B class " +a1);
+              system.out.println("Bclass "+this.a1);
+              system.out.println("A class "+super.a1);
+}
+
+}
+
+class demo7
+
+{
+     public static void main(string args[])
+     {
+       B.b = new A();
+      
+       b.xyz(10);
+}
+}
