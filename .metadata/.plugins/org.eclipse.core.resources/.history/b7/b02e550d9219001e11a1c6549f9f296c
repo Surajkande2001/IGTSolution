@@ -1,0 +1,18 @@
+package com;
+import javax.persistence.Entity;
+import javax.persistence.Id;
+
+public class IGTEmployee {
+	
+	
+	private int uid;
+	private String name;
+	private int salary;
+	private 
+	private String Role;
+	
+	
+
+	
+
+}

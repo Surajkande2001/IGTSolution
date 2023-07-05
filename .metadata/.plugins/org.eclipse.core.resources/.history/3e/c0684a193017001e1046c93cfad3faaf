@@ -1,0 +1,54 @@
+<%@ page language="java" contentType="text/html; charset=ISO-8859-1"
+    pageEncoding="ISO-8859-1" import= "java.sql.*"%>
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="ISO-8859-1">
+<title>Insert title here</title>
+</head>
+<body>
+<%
+    int id = Integer.parseInt(request.getParameter("id"));
+    String name = request.getParameter("name");
+    int age = Integer.parseInt(request.getParameter("age"));
+    int accNo = Integer.parseInt(request.getParameter("accNo"));
+    String ifscNo = request.getParameter("ifscNo");
+    String panNo = request.getParameter("panNo");
+    int adharNo = Integer.parseInt(request.getParameter("aadharNo"));
+    int balance = Integer.parseInt(request.getParameter("balance"));
+    response.setContentType("text/html");
+    try {
+
+ 
+
+       Class.forName("com.mysql.jdbc.Driver");
+       Connection con = DriverManager.getConnection("jdbc:mysql://localhost:3306/IGT1","root","@#Shubham1");
+
+        PreparedStatement p = con.prepareStatement("insert into phonePayJsp values(?, ?, ?, ?, ?, ?, ?, ?)");
+
+        p.setInt(1, id);
+        p.setString(2, name);
+        p.setInt(3, age);
+        p.setInt(4, accNo);
+        p.setString(5, ifscNo);
+        p.setString(6, panNo);
+        p.setInt(7, adharNo);
+        p.setInt(8, balance);
+
+ 
+
+        p.execute();
+//        p.close();
+        out.print("<h2 style='color: green; margin-left: 34rem;'> User Added Successfullyl. </h2>");
+        RequestDispatcher rd = request.getRequestDispatcher("Demo.html");
+        rd.include(request, response);
+//        out.print("<a href='index.html' >Home</a>");
+    } catch(Exception e) {
+
+ 
+
+        System.out.println(e);
+    }
+    %>
+</body>
+</html>

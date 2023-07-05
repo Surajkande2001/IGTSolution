@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>DEPOSIT</title>
+<style>
+    body {
+        background-color: white;
+    }
+
+    .container {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        height: 100vh;
+    }
+
+    .logo {
+        margin-bottom: 0px;
+    }
+
+    .login-form {
+        background-color: white;
+        padding: 20px;
+        border-radius: 10px;
+    }
+
+    input[type="text"],
+    input[type="password"] {
+        width: 250px;
+        height: 40px;
+        border-radius: 10px;
+    }
+
+    input[type="submit"] {
+        width: 150px;
+        height: 50px;
+        border-radius: 20px;
+        background-color: #6739B7;
+        color: white;
+        border: none;
+        margin-right: 10px;
+    }
+    
+    .action-buttons {
+        margin-top: 20px;
+        display: flex;
+        justify-content: center;
+    }
+    
+    .action-buttons button {
+        margin: 0 10px;
+        width: 150px;
+        height: 40px;
+        border-radius: 10px;
+        background-color: grey;
+        color: white;
+        border: none;
+    }
+</style>
+</head>
+<body>
+<div class="container">
+    <div class="logo">
+        <img border="0" src="https://download.logo.wine/logo/PhonePe/PhonePe-Logo.wine.png"
+     alt="logo" width="350" height="250">
+    </div>
+<div style="text-align: center;">
+<form action="update">
+<table border="1">
+<tr>
+<th>ACCOUNT NUMBER</th>
+<th><input type="text" name="accno" style="width: 250px;height: 40px;border-radius: 10px"></th>
+</tr>    
+<tr>
+<th>AMOUNT</th>
+<th><input type="text" name="bal" style="width: 250px;height: 40px;border-radius: 10px"></th>
+</tr>
+
+<tr>
+<th></th>
+<th><input type="submit" value="WITHDRAW" style="width: 100px;height: 40px;border-radius: 10px;background-color: purple;"></th>
+</tr>
+
+</table>
+</form>
+<form action="home.html"><br><input type="submit" value="Home"><br> </form>
+</div>
+</div>
+
+</body>
+</html>

@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring comment="Rename compilation unit &apos;com.IGT_Employee.java&apos; to &apos;IGTEmployee.java&apos;&#x0D;&#x0A;- Original project: &apos;HibernateDemo2&apos;&#x0D;&#x0A;- Original element: &apos;com.IGT_Employee.java&apos;&#x0D;&#x0A;- Renamed element: &apos;com.IGTEmployee.java&apos;" description="Rename compilation unit &apos;IGT_Employee.java&apos;" flags="2" id="org.eclipse.jdt.ui.rename.compilationunit" input="/src\/main\/java=/optional=/true=/=/maven.pomderived=/true=/&lt;com{IGT_Employee.java" name="IGTEmployee.java" references="false" stamp="1688382557482" version="1.0"/>
+</session>

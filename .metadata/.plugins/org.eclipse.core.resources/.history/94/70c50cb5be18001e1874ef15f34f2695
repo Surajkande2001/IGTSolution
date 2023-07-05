@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<meta charset="ISO-8859-1">
+	<title>Insert title here</title>
+	<style>
+		body {
+			background-color: red;
+			font-family: Arial, sans-serif;
+			margin: 0;
+			padding: 20px;
+		}
+
+		h1 {
+			text-align: center;
+			color: #333333;
+		}
+
+		form {
+			text-align: center;
+		}
+
+		table {
+			margin: 0 auto;
+		}
+
+		td {
+			padding: 10px;
+		}
+
+		input[type="text"] {
+			width: 200px;
+			padding: 5px;
+			border-radius: 5px;
+			border: 1px solid #ccc;
+		}
+
+		input[type="submit"] {
+			padding: 8px 20px;
+			border-radius: 5px;
+			border: none;
+			background-color: #007bff;
+			color: #fff;
+			cursor: pointer;
+		}
+	</style>
+</head>
+
+<body>
+	<div>
+		<h1>Deposit Amount</h1>
+		<form action="Deposit.jsp">
+			<table>
+				<tr>
+					<td>
+						Enter Id:
+					</td>
+					<td>
+						<input type="text" name="id">
+					</td>
+				</tr>
+				<tr>
+					<td>
+						Enter Amount:
+					</td>
+					<td>
+						<input type="text" name="amt">
+					</td>
+				</tr>
+				<tr>
+					<td colspan="2">
+						<input type="submit" value="Submit">
+					</td>
+				</tr>
+			</table>
+		</form>
+	</div>
+</body>
+
+</html>

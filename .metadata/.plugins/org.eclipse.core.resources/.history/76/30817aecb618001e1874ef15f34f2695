@@ -1,0 +1,79 @@
+<%@ page language="java" contentType="text/html; charset=ISO-8859-1" pageEncoding="ISO-8859-1" import="java.sql.*" %>
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="ISO-8859-1">
+<title>Login Page</title>
+<style>
+	body {
+		font-family: Arial, sans-serif;
+		margin: 0;
+		padding: 0;
+		background-color: #f2f2f2;
+	}
+
+	.container {
+		max-width: 400px;
+		margin: 100px auto;
+		background-color: #ffffff;
+		padding: 20px;
+		border-radius: 5px;
+		box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+	}
+
+	h1 {
+		text-align: center;
+		color: #333333;
+	}
+
+	p {
+		text-align: center;
+		color: #ff0000;
+	}
+
+	input[type="text"],
+	input[type="password"] {
+		width: 100%;
+		padding: 10px;
+		margin-bottom: 10px;
+		border-radius: 5px;
+		border: 1px solid #cccccc;
+	}
+
+	input[type="submit"] {
+		width: 100%;
+		padding: 10px;
+		border-radius: 5px;
+		border: none;
+		background-color: #007bff;
+		color: #ffffff;
+		font-weight: bold;
+		cursor: pointer;
+	}
+
+	input[type="submit"]:hover {
+		background-color: #0056b3;
+	}
+</style>
+</head>
+<body>
+
+	<div class="container">
+		<%
+			String name = request.getParameter("uname");
+			String pass = request.getParameter("upass");
+
+			if(name.equalsIgnoreCase("Suraj") && pass.equalsIgnoreCase("Suraj@123"))  {
+				out.print("<h1>Logged in</h1>");
+				RequestDispatcher rd = request.getRequestDispatcher("Index.html");
+				rd.forward(request, response);
+			} else {
+				out.print("<p>Please try again</p>");
+				RequestDispatcher rd = request.getRequestDispatcher("login.html");
+				rd.include(request, response);
+			}
+		%>
+	</div>
+
+</body>
+</html>

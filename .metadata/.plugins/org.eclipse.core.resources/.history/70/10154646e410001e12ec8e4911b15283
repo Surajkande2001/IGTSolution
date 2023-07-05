@@ -1,0 +1,25 @@
+package demo51;
+
+class AAAAA
+{
+     private int id;
+     void asetId(int id)
+     {
+         this.id = id;
+     }
+     int getId()
+     {
+            return id;
+     }
+}
+
+class Demo28
+{
+
+   public static void main(String args[])
+     {
+	   AAAAA a = new AAAAA();
+              a.setId(100);
+              System.out.println(a.getId);
+}
+}
